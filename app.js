@@ -22,12 +22,19 @@ app.get("/restaurants/:restaurant_id", (req, res) => {
 
 app.get("/search", (req, res) => {
   const keyword = req.query.keyword
-  const restaurants = restaurantList.results.filter(restaurantListFilter)
-  function restaurantListFilter (restaurant) {
+  const restaurants = restaurantList.results.filter(restaurant => restaurant.name.toLowerCase().includes(keyword.toLowerCase()))
+  res.render("index", { restaurants: restaurants, keyword: keyword })
+})
+
+/*也可以寫成非匿名函式*/
+/*app.get("/search", (req, res) => {
+  const keyword = req.query.keyword
+  const restaurants = restaurantList.results.filter(restaurantFilter)
+  function restaurantFilter (restaurant) {
     return restaurant.name.toLowerCase().includes(keyword.toLowerCase())
   }
   res.render("index", { restaurants: restaurants, keyword: keyword })
-})
+})*/
 
 
 app.listen(port, () => {
