@@ -34,9 +34,8 @@ git clone https://github.com/HOChiaChun/S2-3-A21-restaurant-list.git
 
 5. 開啟程式
 
-```
-即啟動完成，可至[http://localhost:3000](http://localhost:3000)開始使用程式
-```
+即啟動完成，可至 http://localhost:3000 進入首頁
+
 
 
 
