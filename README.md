@@ -32,6 +32,13 @@ git clone https://github.com/HOChiaChun/S2-3-A21-restaurant-list.git
 終端機輸入 nodemon app.js 或 dev run nodemon
 ```
 
+5. 開啟程式
+
+```
+即啟動完成，可至[http://localhost:3000](http://localhost:3000)開始使用程式
+```
+
+
 
 ## 功能描述 (features)
 
